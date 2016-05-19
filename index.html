@@ -36,29 +36,21 @@
       var valores = [];
      
 
-      for(var n=0 ; n < 20; n++){
+      for(var n=0 ; n < aData.length; n++){
         //seriesFecha.push([aData[n]['fecha']])
         valores.push([
-          aData[20]['fecha'],
-          aData[20]['volumen']
+          aData[n]['fecha'],
+          aData[n]['cierre']
           ]);
         
-       //console.log(aData[n])
+       console.log(aData[n])
 
       }
-      //contador
-    /*  var valors = [valores[n=19],valores[n=18],valores[n=17],valores[n=16],valores[n=15],valores[n=14],valores[n=13],valores[n=12],valores[n=11],valores[n=10],valores[n=9],valores[n=8],valores[n=7],valores[n=6],valores[n=5],valores[n=4],valores[n=3],valores[n=2],valores[n=1],valores[n=0]];
-      console.log(valors)
-      var contador;
-
-      for (contador=0; contador < valors.length; contador++){
-      console.log(contador)
-      }
-       */
+      
 
       anychart.onDocumentReady(function() {
       // create data set on our data
-      var dataSet = anychart.data.set([ valores[n=19]
+      var dataSet = anychart.data.set([ valores[n=20],valores[n=19],valores[n=18],valores[n=17],valores[n=16],valores[n=15],valores[n=14],valores[n=13],valores[n=12],valores[n=11],valores[n=10],valores[n=9],valores[n=8],valores[n=7],valores[n=6],valores[n=5],valores[n=4],valores[n=3],valores[n=2],valores[n=1],vaslores[n=0]
       ]);
 
       // map data for the first series, take x from the zero column and value from the first column of data set
@@ -105,9 +97,6 @@
       // initiate chart drawing
       chart.draw();
     });
-
-
-
 
     };
     </script>
